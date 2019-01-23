@@ -1,0 +1,14 @@
+server:
+  port: 9999
+spring:
+  rabbitmq:
+    host: dreamatach.com
+    port: 5672
+    username: admin
+    password: admin
+    #发送手动确认成功
+    publisher-confirms: true
+    #接受手动确认
+    listener:
+      simple:
+        acknowledge-mode: MANUAL
