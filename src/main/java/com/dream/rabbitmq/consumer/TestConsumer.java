@@ -19,8 +19,9 @@ public class TestConsumer {
     @RabbitListener(queues = RabbitmqConstant.TEST_QUEUE)
     public void messageConsumer(String message, Channel channel, @Header(AmqpHeaders.DELIVERY_TAG) long tag)
             throws Exception {
-        System.out.println("消费者端接收到消息 : " + message);
+        System.out.println("消费者端接收到消息 : " + message + "---------------------- tag : " + tag);
         channel.basicAck(tag, false);
-        // channel.basicNack(tag, false, true);
+        //channel.basicNack(tag, false, true);
+        // channel.basicReject(tag, true);
     }
 }
