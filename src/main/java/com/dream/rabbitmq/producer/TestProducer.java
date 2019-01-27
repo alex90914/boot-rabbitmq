@@ -31,6 +31,10 @@ public class TestProducer {
         rabbitTemplate.setConfirmCallback((correlationData, ack, cause) -> {
             String orderId = correlationData.getId();
             // ack为true，代表MQ已经准确收到消息
+
+            System.out.println("准备发送消息 : " + ack);
+            int x = 1 / 0;
+            System.out.println(x);
             if (!ack) {
                 return;
             }

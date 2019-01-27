@@ -11,7 +11,7 @@
     <groupId>com.dream.rabbitmq</groupId>
     <artifactId>boot-rabbitmq</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>rabbitmq</name>
+    <name>boot-rabbitmq</name>
     <description>rabbitmq学习</description>
 
     <properties>
