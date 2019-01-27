@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.dream.rabbitmq</groupId>
-    <artifactId>rabbitmq</artifactId>
+    <artifactId>boot-rabbitmq</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>rabbitmq</name>
     <description>rabbitmq学习</description>
