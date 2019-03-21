@@ -28,6 +28,6 @@ public class RabbitmqConfig {
         return BindingBuilder
                 .bind(helloQueue())
                 .to(exchange())
-                .with(RabbitmqConstant.TEST_ROUTINGKEY);
+                .with(RabbitmqConstant.TEST_ROUTING_KEY);
     }
 }

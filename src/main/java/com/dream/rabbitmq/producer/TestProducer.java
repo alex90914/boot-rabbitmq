@@ -50,7 +50,7 @@ public class TestProducer {
     public void sendMsg(Message msg) {
         // 1. 发送消息到MQ
         // CorrelationData 当收到消息回执时，会附带上这个参数
-        rabbitTemplate.convertAndSend(RabbitmqConstant.TEST_EXCHANGE, RabbitmqConstant.TEST_ROUTINGKEY, JSON.toJSONString(msg),
+        rabbitTemplate.convertAndSend(RabbitmqConstant.TEST_EXCHANGE, RabbitmqConstant.TEST_ROUTING_KEY, JSON.toJSONString(msg),
                 new CorrelationData(msg.getOrderId()));
     }
 }

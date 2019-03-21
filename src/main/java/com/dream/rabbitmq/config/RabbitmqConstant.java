@@ -10,5 +10,5 @@ package com.dream.rabbitmq.config;
 public class RabbitmqConstant {
     public static final String TEST_QUEUE = "test.queue";
     public static final String TEST_EXCHANGE = "test.exchange";
-    public static final String TEST_ROUTINGKEY = "test";
+    public static final String TEST_ROUTING_KEY = "test";
 }
