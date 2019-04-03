@@ -30,4 +30,9 @@ public class RabbitmqConfig {
                 .to(exchange())
                 .with(RabbitmqConstant.TEST_ROUTING_KEY);
     }
+
+    public static void main(String[] args) {
+        System.out.println("DAD428CA147847D9A8636517E4B698E3".length());
+    }
+
 }
